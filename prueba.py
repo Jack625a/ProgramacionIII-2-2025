@@ -119,6 +119,3 @@ for codigo, datos in estudiantes2.items():
     print("Celular: ",datos["celular"])
     print("Correo: ",datos["correo"])
     print("----------------------")
-
-  
-

@@ -20,10 +20,13 @@ def main(page: ft.Page):
     boton4=ft.FilledButton(
         text="Boton Filled",
         icon=ft.Icons.MODE_EDIT_ROUNDED,
-        bgcolor=ft.Colors.PURPLE_400
+        bgcolor=ft.Colors.PURPLE_400,
+        
     )
     botonFlotante=ft.FloatingActionButton(
-        icon=ft.Icons.ADD
+        icon=ft.Icons.ADD,
+        mini=True,
+        mouse_cursor=ft.MouseCursor.HELP
     )
     boton5=ft.FilledTonalButton(
         text="Boton tonal",
@@ -31,8 +34,19 @@ def main(page: ft.Page):
     )
     botonIcono=ft.IconButton(
         icon=ft.Icons.CAR_CRASH,
-        bgcolor=ft.Colors.GREEN_400,
+        bgcolor="#913052",
         icon_color=ft.Colors.WHITE
+    )
+    texto=ft.Text(
+        value="Framework Flet",
+        size=30,
+        weight=ft.FontWeight.W_800,
+        font_family="Arial",
+        color="#30918E",
+        width=650,
+        text_align=ft.TextAlign.CENTER,
+        #bgcolor="#913052"
+
     )
 
     #INTERFAZ
@@ -46,7 +60,8 @@ def main(page: ft.Page):
         boton4,
         botonFlotante,
         boton5,
-        botonIcono
+        botonIcono,
+        texto
     )
 
 #EJECUCION DEL PROYECTO

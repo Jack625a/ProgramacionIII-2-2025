@@ -11,13 +11,37 @@ def main(page: ft.Page):
     contraseña=ft.TextField(label="Ingrese su contraseña", password=True, can_reveal_password=True)
     celular=ft.TextField(label="Ingrese su celular", keyboard_type=ft.KeyboardType.PHONE)
     
+    #Contenedores
+    #1. contenedores Horizontales
+    contenedorHorizontal=ft.Row(
+        [
+            nombre,carrera,correo,contraseña,celular
+        ],
+        auto_scroll=True,
+        scroll=ft.ScrollMode.AUTO, #Activacion del scroll
+        #width=500
+        spacing=20
+    )
+    #2. Contenedor Vertical
+    contenedorVertical=ft.Column(
+        [
+            correo,
+            celular,
+            contenedorHorizontal
+        ],
+        width=400
+    )
+
+
     #componentes de la interfaz
     page.add(
         nombre,
         carrera,
         correo,
         contraseña,
-        celular
+        celular,
+        contenedorHorizontal,
+        contenedorVertical
     )
 
 #Inicializacion de la app

@@ -6,11 +6,13 @@ from pantallas.pantalla2 import contenidoPantalla2
 from pantallas.pantalla3 import contenidoPantalla3
 from pantallas.pantalla4 import contenidoPantalla4
 
-
-
-
 #2. Funcion Principal
 def main(page: ft.Page):
+    #CABECERA
+    page.appbar= ft.AppBar(
+        title=ft.Text("Contenedores Tabs"),
+        leading=ft.Icon(ft.Icons.LOOP_OUTLINED)
+        )
 
     #PASO 1. CREAR LA VARIABLES OPCIONES (TABS)
     opciones=ft.Tabs(

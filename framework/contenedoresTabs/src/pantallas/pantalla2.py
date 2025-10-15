@@ -17,15 +17,3 @@ def contenidoPantalla2():
     
     )
    
-    
-
-
-#ft.Card(
- #       content=ft.Container(
-  #          content=(
-   #             ft.Text("Contenedor Card")
-    #        )
-     #   )
-
-    #)
-    
